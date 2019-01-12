@@ -44,7 +44,6 @@ class isUnique {
 
     public static void main(String[] args){
         String stringToCheck = getInput();
-        System.out.println(stringToCheck);
         boolean result = checkString(stringToCheck);
         System.out.println(printResult(result));
     }
