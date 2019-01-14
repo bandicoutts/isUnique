@@ -16,7 +16,7 @@ import java.util.Arrays;
 
 class isUnique {
 
-    public static String getInput(){
+    private static String getInput(){
         String result;
         Scanner reader = new Scanner(System.in);
         System.out.println("Enter a string:");
@@ -24,7 +24,7 @@ class isUnique {
         return result;
     }
 
-    public static String printResult(boolean result){
+    private static String printResult(boolean result){
         if (result) {
             return "The characters in this string are unique.";
         } else {
@@ -32,7 +32,7 @@ class isUnique {
         }
     }
 
-    public static boolean checkString(String str){
+    private static boolean checkString(String str){
         char[] charArray = str.toCharArray();
         Arrays.sort(charArray);
         for (int i = 0; i < charArray.length - 1; i++){
